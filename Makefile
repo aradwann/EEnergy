@@ -44,7 +44,7 @@ mock:
 	mockgen -package mockwk -destination worker/mock/processor.go github.com/aradwann/eenergy/worker TaskProcessor
 
 # Testing
-test: 
+test:
 	go test -short -v -cover ./...
 
 testci:
@@ -55,7 +55,7 @@ server:
 	go run main.go
 
 # Protocol Buffers
-protoc: 
+protoc:
 	rm -f pb/*.go
 	rm -f doc/swagger/*.swagger.json
 	protoc --proto_path=proto --go_out=pb --go_opt=paths=source_relative \
@@ -91,4 +91,3 @@ gen-cert:
 
 
 .PHONY: createdb dropdb migrateup migrateup1 migratedown migratedown1 test server protoc evans gen-cert init
-

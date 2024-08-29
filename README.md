@@ -25,6 +25,7 @@ To contribute to eEnergy, you will need to set up your development environment w
 - **Buf**: Provides Protocol Buffer support and linting in VSCode. Essential for working with gRPC services.
 - **Migrate**: A CLI tool for handling database migrations. Ensures that your local development database schema is up-to-date.
 - **Protocol Buffer Compiler and Plugins**: Necessary for compiling `.proto` files into Go code.
+
   - Install on Fedora/RHEL/CentOS:
 
     ```bash
@@ -35,12 +36,13 @@ To contribute to eEnergy, you will need to set up your development environment w
 
 1. **Clone the Repository**
 
-    ```bash
-    git clone https://github.com/aradwann/eenergy.git
-    ```
+   ```bash
+   git clone https://github.com/aradwann/eenergy.git
+   ```
 
 2. **Set Up Your Local Development Environment**
-    - Ensure all required tools are installed.
+
+   - Ensure all required tools are installed.
 
 3. **Generate Certificates For Local Use**
 
@@ -49,22 +51,22 @@ To contribute to eEnergy, you will need to set up your development environment w
   ```
 
 - ```bash
-      make gen-cert
+        make gen-cert
   ```
 
-4.**Build and Run Using Docker**
+  4.**Build and Run Using Docker**
 
 - Build the Docker images:
 
-    ```bash
-    docker compose build
-    ```
+  ```bash
+  docker compose build
+  ```
 
 - Run the containers:
 
-    ```bash
-    docker compose up
-    ```
+  ```bash
+  docker compose up
+  ```
 
 ### using postman with mTLS enabled
 
@@ -72,7 +74,7 @@ To contribute to eEnergy, you will need to set up your development environment w
 2. add client certificate with crt, key files and localhost:9091 as domain
 
 3. **Access the Application**
-    - The application and its services are now accessible on your local machine.
+   - The application and its services are now accessible on your local machine.
 
 ## Contributing
 
